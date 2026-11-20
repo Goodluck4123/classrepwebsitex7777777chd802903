@@ -1,0 +1,40 @@
+header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+th, td {
+    width: 10%;
+    color: white;
+    background-color: red;
+}
+table {
+    background-color: white;
+    margin-top: 20px;
+    
+}
+
+.paymentContainer {
+    background-color: red;
+    color: white;
+    display: none;
+   
+}
+input {
+    cursor: pointer;
+}
+
+.showOrHide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    gap: 20px;
+}
+.showOrHide button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    
+}

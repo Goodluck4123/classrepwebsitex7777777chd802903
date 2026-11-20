@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Dashboard</title>
+    <style>
+        .loginContainer {
+            width: 100%;
+            height: 90vh;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .classRepLogIn {
+            width: 70%;
+            height: 70%;
+            background-color: white;
+
+        }
+        label {
+            font-size: 2rem;
+
+        }
+        input {
+            width: 80%;
+            padding: 5px
+        }
+        .classRepLogIn button {
+            margin-left: 3px;
+            font-size: 0.8rem;
+            background-color: red;
+            color: white;
+            padding: 3px;
+            cursor: pointer;
+        }
+        .buttonContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+        .buttonContainer button {
+            font-size: 1.3rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: hsla(0, 100%, 50%, 0.721);
+        }
+
+        #welcome {
+            display: none;
+        }
+        .welcome div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            width: 100%;
+            height: 100vh;
+            
+        }
+        .welcome h1 {
+            font-size: 3rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="loginPage">
+    <header>
+        <h1>DASHBOARD FOR SEN CLASS 30</h1>
+    </header>
+    <div class="loginContainer">
+        <section class="classRepLogIn">
+            <h2>CLASSREP LOGIN</h2>
+            <label for="name">Enter your name</label><br>
+            <input type="text" id="name" placeholder="For ClassRep only">
+            <br>
+            <br>
+            <label for="password">Enter Password</label><br>
+            <input type="password" id="password"><button id="showOrHideButton">Show</button>
+            <div class="buttonContainer">
+                <button id="enterButton">Enter Dashboard</button>
+            </div>
+            
+        </section>
+        
+        
+    </div>
+    <p id="error" style="text-align: center; color: rgb(215, 9, 9); font-size: 3rem;"></p>
+</div>
+
+
+
+
+    <div class="welcome" id="welcome">
+        <div>
+            <h1>Welcome Class Rep</h1> 
+        </div>
+    </div>
+     
+    
+
+    
+    <script src="login.js"></script>
+</body>
+</html>
